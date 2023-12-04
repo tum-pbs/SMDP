@@ -1,0 +1,15 @@
+dm_haiku==0.0.9
+einops==0.7.0
+h5py==3.8.0
+imageio==2.26.0
+matplotlib==3.5.1
+moviepy==1.0.3
+numpy==1.24.2
+optax==0.1.4
+pandas==2.0.0
+scipy==1.9.1
+scikit-image
+tqdm==4.65.0
+wandb==0.14.0
+FyeldGenerator
+notebook

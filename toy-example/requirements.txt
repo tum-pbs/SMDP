@@ -1,0 +1,6 @@
+diffrax==0.1.2
+dm_haiku==0.0.9
+matplotlib==3.5.1
+optax==0.1.4
+tqdm==4.65.0
+wandb==0.14.0
