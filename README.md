@@ -3,7 +3,7 @@
 This repository contains the code for the paper "Solving Inverse Physics Problems with Score Matching" by [Benjamin Holzschuh](https://ge.in.tum.de/about/benjamin-holzschuh/), [Simona Vegetti](https://www.mpa-garching.mpg.de/person/44138/), and [Nils Thuerey](https://ge.in.tum.de/about/n-thuerey/). The paper can be found [here](https://arxiv.org/abs/2301.10250).
 
 
-Our works proposes a novel approach to solve inverse problems involving the temporal evolution og physics systems by leveraging the idea of score matching. The system’s current state is moved backward in time step by step by combining an approximate inverse physics simulator and a learned correction function. A central
+Our works proposes a novel approach to solve inverse problems involving the temporal evolution of physics systems by leveraging the idea of score matching. The system’s current state is moved backward in time step by step by combining an approximate inverse physics simulator and a learned correction function. A central
 insight of our work is that training the learned correction with a single-step loss is equivalent to a score matching objective, while recursively predicting longer
 parts of the trajectory during training relates to maximum likelihood training of a corresponding probability flow. In the paper, we highlight the advantages of our algorithm compared to standard denoising score matching and implicit score matching, as well as fully learned baselines for a wide range of inverse physics problems. 
 The resulting inverse solver has excellent accuracy and temporal stability and, in contrast to other learned inverse solvers, allows for sampling the posterior of the solutions. 
@@ -11,8 +11,8 @@ The resulting inverse solver has excellent accuracy and temporal stability and, 
 Feel free to contact us if you have questions or suggestions regarding our work.
 
 ## Method Overview  
-<p float="center">
-  <img src="https://github.com/Akanota/smdp/assets/16702943/50b18edd-99ee-490f-b704-6c9e7d59231a" width="90%" />
+<p align="center">
+  <img src="https://github.com/tum-pbs/SMDP/assets/16702943/cdf7b296-d1b1-4e55-be32-eb590003e7c0" width="90%" />
 </p>
 
 ## Installation and Requirements
@@ -49,7 +49,7 @@ We learn score fields for 1D-processes with simple SDEs. The experiments are loc
 The simple setup allows us to compare the score learned by our method with the analytical score and 
 evaluate how well the posterior distribution obtained from our method matches the true posterior distribution.
 
-![toy_example_thumb](https://github.com/Akanota/smdp/assets/16702943/d82d4b28-fa74-47d4-8c4f-c1cdf37499a4)
+![toy_example_thumb](https://github.com/tum-pbs/SMDP/assets/16702943/af589b4d-513f-479b-979d-88cad1b34636)
 
 ### Burgers' Equation
 
@@ -63,7 +63,8 @@ In this example, we learn the score field for the stochastic heat diffusion equa
 As the diffusive nature of the equation destroys information over time, small-scale structures need to be created during inference. 
 This highlights the advanatages of the SDE version of our method, as noise added to the trajectories can be used to create missing details.
 
-![heat_equation_example](https://github.com/Akanota/smdp/assets/16702943/652d9f7d-b1ba-4f25-be2a-1a6d088d5d8c)
+![heat_equation_example](https://github.com/tum-pbs/SMDP/assets/16702943/f4bb5200-058a-430e-9c95-ab82fa3016ac)
+
 
 ### Buoyancy-driven Flow with Obstacles
 
@@ -71,7 +72,8 @@ This example is located in the folder `buoyancy-flow`. We learn the score field 
 What makes this experiment challenging is that it involves non-linear physics and randomly placed obstacles for each simulation. 
 This means that the learned score field needs to be able to generalize very well to unseen scenarios.
 
-![ezgif-3-db0e2006cd](https://github.com/Akanota/smdp/assets/16702943/22cc313f-3a49-4fcb-b415-256430cdb733)
+
+![buoyancy_flow_overview](https://github.com/tum-pbs/SMDP/assets/16702943/b410e0e8-a1e0-47a5-ba07-2f59728aeeea)
 
 ### Isotropic Forced Turbulence
 
