@@ -12,9 +12,9 @@ Code to create the dataset for training and testing can be found in `data/smoke_
 We provide a Jupyter notebook to open and visualize the dataset in `data/data_visualization.ipynb`.
 
 <p align="center">
-  <img src="https://github.com/Akanota/smdp/assets/16702943/a11c166c-9f52-4e02-89d0-93216aa68d80" width="45%">
+  <img src="https://github.com/tum-pbs/SMDP/assets/16702943/b59d8dc7-a3bf-43a4-99ec-3abbb73bb60a" width="45%">
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="https://github.com/Akanota/smdp/assets/16702943/4b41d2f6-68b5-485a-8612-0e506bb1f7e7" width="45%">
+  <img src="https://github.com/tum-pbs/SMDP/assets/16702943/280af911-286a-4322-adc0-02f4f214b09f" width="45%">
 </p>
 
 ### Usage
