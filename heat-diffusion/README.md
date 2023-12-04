@@ -6,8 +6,8 @@ The PDE is given by $$\frac{\partial u}{\partial t} = \alpha \Delta u$$ with dif
 Below, we visualize initial conditions that are being evolved over time from $t=0$ until $t=0.2$ with the heat equation.
 
 <p align="center">
-  <img src="https://github.com/Akanota/smdp/assets/16702943/48b2eb3c-1be2-4d24-a9e1-2b71ab89a77a" width="30%" />
-  <img src="https://github.com/Akanota/smdp/assets/16702943/378a40c4-03ad-4fb0-9e12-0cb6d203beb7" width="30%" />
+  <img src="https://github.com/tum-pbs/SMDP/assets/16702943/75f21f1d-c6e3-43ad-ab17-2e5333d1160a" width="30%" />
+  <img src="https://github.com/tum-pbs/SMDP/assets/16702943/f5ccd02a-66a7-4262-b428-85202c5d100a" width="30%" />
 </p>
 
 ### Dataset
@@ -17,7 +17,7 @@ There is a tutorial Jupyter notebook for generating the dataset files located at
 In the paper, we consider Gaussian random fields with power law exponent $n=4.0$ at resolution $32 \times 32$. 
 
 <p align="center">
-  <img src="https://github.com/Akanota/smdp/assets/16702943/e8d23782-0025-4eb9-b71d-100927ca9026" width="70%" />
+  <img src="https://github.com/tum-pbs/SMDP/assets/16702943/e3dae53d-03a5-4376-879f-38b58800e710" width="70%" />
 </p>
 
 ### Stochastic heat equation and solving the PDE with Euler-Maruyama
@@ -38,7 +38,7 @@ We provide a self-contained notebook to solve the heat equation with the Euler-M
 Below we visualize different solutions at $t=0.2$ obtained with the Euler-Maruyama method and noise scale $g\equiv 0.1$.
 
 <p align="center">
-  <img src="https://github.com/Akanota/smdp/assets/16702943/36798e7f-4014-4fbb-be17-c3989cdf972a" width="70%" />
+  <img src="https://github.com/tum-pbs/SMDP/assets/16702943/45420bf5-3605-4cbe-96e1-da9a67cd5192" width="70%" />
 </p>
  
 ## Training
@@ -111,5 +111,5 @@ and trained network weights in `notebooks/inference.ipynb`.
 Below, we visualize the results of inference with our proposed SDE and ODE methods on the heat diffusion example.
 
 <p align="center">
-  <img src="https://github.com/Akanota/smdp/assets/16702943/cc083920-a11d-4e76-a827-d3b9e4fe9228" width="100%" />
+  <img src="https://github.com/tum-pbs/SMDP/assets/16702943/f4bb5200-058a-430e-9c95-ab82fa3016ac" width="100%" />
 </p>
