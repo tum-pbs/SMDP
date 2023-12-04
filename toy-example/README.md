@@ -11,7 +11,7 @@ Our data sets consist of 2500 (100%), 250 (10%) and 25 (1%) trajectories from t=
 with a time step of $\Delta t = 0.02$. You can see a plot of the trajectories below.
 
 <p align="center" width="100%">
-    <img width="40%" src="https://github.com/Akanota/smdp/assets/16702943/595edded-7143-4e5c-9227-f0499a305b97"> 
+    <img width="40%" src="https://github.com/tum-pbs/SMDP/assets/16702943/ac3fed90-dc3a-4d17-97bf-12bd8547f1c0"> 
 </p>
 
 ## Training and Inference
@@ -47,7 +47,7 @@ The score is approximated with a neural network $s_\theta(x,t)$. Visualizing the
 domain $[0, 10] \times [-1,1]$ yields the following plot:
 
 <p align="center" width="100%">
-    <img width="50%" src="https://github.com/Akanota/smdp/assets/16702943/d4a63fed-cf09-44ed-baff-1c375f2faf04"> 
+    <img width="50%" src="https://github.com/tum-pbs/SMDP/assets/16702943/637e67e3-9fea-4b7f-b626-e2720914f7f7"> 
 </p>
 
 For inference, blue regions have a negative score, so $\nabla_x \log p_t(x) < 0$ and the data likelihood is increased, if the trajectory falls.
@@ -60,7 +60,7 @@ where $s_\theta(x,t)$ is the score network. Note that we solve the probability f
 want to solve initial states given an end value of a trajectory. Notice that paths with values $>0$ at $t=10.0$ are colored blue and end in $1$, whereas for paths $<0$ go to $-1$.
 
 <p align="center" width="100%">
-    <img width="40%" src="https://github.com/Akanota/smdp/assets/16702943/c6609ab5-6073-4a3d-ae00-7dc6f52b70e0"> 
+    <img width="40%" src="https://github.com/tum-pbs/SMDP/assets/16702943/b73d90c6-6364-4d56-a299-ba330b317ece"> 
 </p>
 
 ### Reverse-time SDE
@@ -70,7 +70,7 @@ This is similar to the probability flow ODE but has an additional diffusion term
 We solve the reverse-time SDE from $t=10$ until $t=0$. Paths are now non-smooth and can cross each other.
 
 <p align="center" width="100%">
-    <img width="40%" src="https://github.com/Akanota/smdp/assets/16702943/27d6c41d-cb0d-4e5d-a25b-2d3f4d6374d2"> 
+    <img width="40%" src="https://github.com/tum-pbs/SMDP/assets/16702943/a73a06dd-0eb6-44c7-8d59-eb7804720ac6"> 
 </p>
 
 ## Comparison of learned score with analytic score
@@ -86,5 +86,5 @@ We mask the scores in the regions where the data is very sparse. Overall, our me
 The code for this is contained in a Jupyter notebook in `notebooks/analytic_score_comparison.ipynb`.
 
 <p align="center" width="100%">
-    <img width="100%" src="https://github.com/Akanota/smdp/assets/16702943/d82d4b28-fa74-47d4-8c4f-c1cdf37499a4"> 
+    <img width="100%" src="https://github.com/tum-pbs/SMDP/assets/16702943/af589b4d-513f-479b-979d-88cad1b34636"> 
 </p>
